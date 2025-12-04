@@ -112,57 +112,44 @@ const HeroSection = () => {
                             <span className="word inline-block">Product</span>{' '}
                             <span className="word inline-block">for</span>{' '}
                             <span className="word inline-block">You</span>
-                        </h1>
+                        </span>
+                    </button>
 
-                        <p ref={subheadingRef} className="text-sm sm:text-base lg:text-lg text-gray-600 mb-5 sm:mb-6 lg:mb-8 max-w-xl leading-relaxed">
-                            A digital agency can provide numerous benefits for business looking to establish and enhance their online presence.
-                        </p>
+                    <button className="group px-4 py-2 sm:px-5 sm:py-2.5 lg:px-6 lg:py-3 bg-white text-gray-700 text-sm sm:text-base font-semibold rounded-full border-2 border-gray-200 hover:border-primary hover:text-primary transition-all duration-300 shadow-md hover:shadow-lg transform hover:-translate-y-1 whitespace-nowrap">
+                        Learn More
+                    </button>
 
-                        <div ref={buttonsRef} className="flex flex-row items-center gap-3 sm:gap-4">
-                            <button className="btn-fill-hover group pl-4 pr-2 py-2 sm:pl-5 sm:pr-2.5 sm:py-2.5 lg:pl-6 lg:pr-3 lg:py-3 bg-primary/20 text-primary text-sm sm:text-base font-semibold rounded-full transition-all duration-300 flex items-center justify-center gap-2 shadow-lg hover:shadow-xl transform hover:-translate-y-1 whitespace-nowrap" style={{ "--fill-color": "#1a5f4f" }}>
-                                Get Started
-                                <span className="w-6 h-6 sm:w-7 sm:h-7 lg:w-8 lg:h-8 bg-primary rounded-full flex items-center justify-center group-hover:bg-white transition-colors duration-300">
-                                    <svg className="w-3 h-3 sm:w-3.5 sm:h-3.5 lg:w-4 lg:h-4 text-white group-hover:text-primary transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-all duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M7 17L17 7M17 7H7M17 7v10" />
-                                    </svg>
-                                </span>
-                            </button>
-
-                            <button className="group px-4 py-2 sm:px-5 sm:py-2.5 lg:px-6 lg:py-3 bg-white text-gray-700 text-sm sm:text-base font-semibold rounded-full border-2 border-gray-200 hover:border-primary hover:text-primary transition-all duration-300 shadow-md hover:shadow-lg transform hover:-translate-y-1 whitespace-nowrap">
-                                Learn More
-                            </button>
-
-                            {/* Scroll Indicator - Beside buttons on large screens */}
-                            <div className="hidden lg:block ml-4">
-                                <ScrollIndicator className="scale-75 origin-left" />
-                            </div>
-                        </div>
+                    {/* Scroll Indicator - Beside buttons on large screens */}
+                    <div className="hidden lg:block ml-4">
+                        <ScrollIndicator className="scale-75 origin-left" />
                     </div>
-
-                    {/* Right Content - Image */}
-                    <div ref={imageRef} className="relative mt-6 lg:mt-0 flex justify-center lg:justify-end">
-                        <div className="relative rounded-2xl sm:rounded-3xl overflow-hidden shadow-2xl max-w-sm lg:max-w-md xl:max-w-lg">
-                            <img
-                                src="/hero-team.jpg"
-                                alt="CoreX Team"
-                                className="w-full h-auto object-cover"
-                                onError={(e) => {
-                                    e.target.style.display = 'none';
-                                    e.target.parentElement.classList.add('bg-gradient-to-br', 'from-primary/20', 'to-accent/20', 'aspect-[4/3]');
-                                }}
-                            />
-                            {/* Overlay gradient */}
-                            <div className="absolute inset-0 bg-gradient-to-t from-primary/10 to-transparent"></div>
-                        </div>
-                    </div>
-                </div>
-
-                {/* Scroll Indicator - Centered below content on mobile/tablet */}
-                <div className="relative mt-12 lg:hidden">
-                    <ScrollIndicator className="relative left-1/2 -translate-x-1/2" />
                 </div>
             </div>
-        </section>
+
+            {/* Right Content - Image */}
+            <div ref={imageRef} className="relative mt-6 lg:mt-0 flex justify-center lg:justify-end">
+                <div className="relative rounded-2xl sm:rounded-3xl overflow-hidden shadow-2xl max-w-sm lg:max-w-md xl:max-w-lg">
+                    <img
+                        src="/hero-team.jpg"
+                        alt="CoreX Team"
+                        className="w-full h-auto object-cover"
+                        onError={(e) => {
+                            e.target.style.display = 'none';
+                            e.target.parentElement.classList.add('bg-gradient-to-br', 'from-primary/20', 'to-accent/20', 'aspect-[4/3]');
+                        }}
+                    />
+                    {/* Overlay gradient */}
+                    <div className="absolute inset-0 bg-gradient-to-t from-primary/10 to-transparent"></div>
+                </div>
+            </div>
+        </div>
+
+                {/* Scroll Indicator - Centered below content on mobile/tablet */ }
+    <div className="relative mt-12 lg:hidden">
+        <ScrollIndicator className="relative left-1/2 -translate-x-1/2" />
+    </div>
+            </div >
+        </section >
     );
 };
 
