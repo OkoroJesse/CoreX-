@@ -3,7 +3,7 @@ import gsap from 'gsap';
 
 const ScrollIndicator = ({ className = "" }) => {
     const containerRef = useRef(null);
-    const circleRef = useRef(null);
+    const textRef = useRef(null);
 
     useEffect(() => {
         // Fade in animation
@@ -13,8 +13,8 @@ const ScrollIndicator = ({ className = "" }) => {
             { opacity: 1, y: 0, duration: 1, delay: 2, ease: 'power3.out' }
         );
 
-        // Continuous rotation for the ENTIRE circle (text + arrow together)
-        gsap.to(circleRef.current, {
+        // Continuous rotation for ONLY the text
+        gsap.to(textRef.current, {
             rotation: 360,
             duration: 8,
             repeat: -1,
@@ -45,11 +45,14 @@ const ScrollIndicator = ({ className = "" }) => {
             onClick={scrollToNext}
         >
             <div
-                ref={circleRef}
                 className="relative w-32 h-32 bg-gradient-to-br from-amber-50 to-amber-100 rounded-full flex items-center justify-center shadow-lg hover:shadow-xl transition-shadow duration-300"
             >
-                {/* Circular Text */}
-                <svg className="absolute inset-0 w-full h-full" viewBox="0 0 128 128">
+                {/* Circular Text - Rotates */}
+                <svg
+                    ref={textRef}
+                    className="absolute inset-0 w-full h-full"
+                    viewBox="0 0 128 128"
+                >
                     <defs>
                         <path
                             id="circlePath"
@@ -63,7 +66,7 @@ const ScrollIndicator = ({ className = "" }) => {
                     </text>
                 </svg>
 
-                {/* Center Arrow */}
+                {/* Center Arrow - Static */}
                 <div className="relative z-10">
                     <svg
                         className="w-8 h-8 text-gray-800"
