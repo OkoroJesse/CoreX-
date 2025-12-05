@@ -63,9 +63,9 @@ const ContactSection = () => {
                 </div>
 
                 {/* Content Grid */}
-                <div ref={contentRef} className="grid lg:grid-cols-2 gap-0 lg:gap-12 items-start">
+                <div ref={contentRef} className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-start">
                     {/* Left - Image */}
-                    <div className="hidden lg:block relative rounded-3xl overflow-hidden h-full min-h-[400px] max-w-sm lg:max-w-md mx-auto lg:mx-0">
+                    <div className="relative rounded-3xl overflow-hidden h-full min-h-[400px] max-w-sm lg:max-w-md mx-auto lg:mx-0">
                         <img
                             src="/contact-person.jpg"
                             alt="Contact Person"
