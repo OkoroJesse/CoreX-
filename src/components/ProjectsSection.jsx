@@ -192,22 +192,6 @@ const ProjectsSection = () => {
                     </button>
                 </div>
 
-                {/* Filters */}
-                <div ref={filtersRef} className="flex flex-wrap gap-4 mb-12">
-                    {filters.map((filter) => (
-                        <button
-                            key={filter}
-                            onClick={() => setActiveFilter(filter)}
-                            className={`px-6 py-3 rounded-full font-medium transition-all duration-300 ${activeFilter === filter
-                                ? 'bg-gray-900 text-white'
-                                : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
-                                }`}
-                        >
-                            {filter}
-                        </button>
-                    ))}
-                </div>
-
                 {/* Projects Grid */}
                 <div ref={gridRef} className="grid md:grid-cols-2 gap-8">
                     {projects.map((project, index) => (

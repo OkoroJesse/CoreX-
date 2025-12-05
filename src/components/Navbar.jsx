@@ -30,7 +30,7 @@ const Navbar = () => {
         <>
             <nav ref={navRef} className="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-md border-b border-gray-100">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <div className="flex items-center justify-between h-20 lg:h-24">
+                    <div className="flex items-center justify-between h-16">
                         {/* Logo */}
                         <div className="flex items-center gap-2 sm:gap-3">
                             <div className="w-8 h-8 sm:w-10 sm:h-10 bg-gradient-to-br from-primary to-primary-dark rounded-lg flex items-center justify-center">
@@ -69,9 +69,6 @@ const Navbar = () => {
 
                         {/* CTA Buttons */}
                         <div className="hidden lg:flex items-center gap-4">
-                            <button className="px-5 py-2 text-gray-700 font-medium hover:text-primary transition-colors duration-300 border border-gray-200 rounded-full hover:border-primary">
-                                Login
-                            </button>
                             <button className="btn-fill-hover pl-5 pr-2 py-2 bg-primary/20 text-primary font-medium rounded-full transition-all duration-300 flex items-center gap-2 group" style={{ "--fill-color": "#1a5f4f" }}>
                                 Let's Talk
                                 <span className="w-6 h-6 bg-primary rounded-full flex items-center justify-center group-hover:bg-white transition-colors duration-300">
@@ -146,9 +143,6 @@ const Navbar = () => {
 
                     {/* CTA Buttons */}
                     <div className="flex gap-2 pt-6 border-t border-gray-200">
-                        <button className="px-5 py-2 text-gray-700 text-sm font-medium hover:text-primary transition-colors duration-300 border border-gray-300 rounded-full hover:border-primary bg-white">
-                            Login
-                        </button>
                         <button className="btn-fill-hover pl-5 pr-2 py-2 bg-primary/20 text-primary text-sm font-medium rounded-full transition-all duration-300 flex items-center gap-2 group" style={{ "--fill-color": "#1a5f4f" }}>
                             Let's Talk
                             <span className="w-6 h-6 bg-primary rounded-full flex items-center justify-center group-hover:bg-white transition-colors duration-300">

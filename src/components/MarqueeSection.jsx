@@ -23,7 +23,7 @@ const MarqueeSection = () => {
             { x: 0 },
             {
                 x: -contentWidth,
-                duration: 20,
+                duration: 30,
                 ease: 'none',
             }
         );
@@ -33,7 +33,7 @@ const MarqueeSection = () => {
             { x: contentWidth },
             {
                 x: 0,
-                duration: 20,
+                duration: 30,
                 ease: 'none',
             },
             0 // Start at the same time as the first animation
