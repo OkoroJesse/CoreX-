@@ -80,7 +80,6 @@ const ProjectCard = ({ project, index }) => {
 const ProjectsSection = () => {
     const sectionRef = useRef(null);
     const headingRef = useRef(null);
-    const filtersRef = useRef(null);
     const gridRef = useRef(null);
     const [activeFilter, setActiveFilter] = useState('All');
 
@@ -99,23 +98,6 @@ const ProjectsSection = () => {
                     scrollTrigger: {
                         trigger: sectionRef.current,
                         start: 'top 70%',
-                    }
-                }
-            );
-
-            // Filters animation
-            gsap.fromTo(
-                filtersRef.current.children,
-                { y: 30, opacity: 0 },
-                {
-                    y: 0,
-                    opacity: 1,
-                    duration: 0.6,
-                    stagger: 0.1,
-                    ease: 'power3.out',
-                    scrollTrigger: {
-                        trigger: filtersRef.current,
-                        start: 'top 75%',
                     }
                 }
             );
