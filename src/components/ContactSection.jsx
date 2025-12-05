@@ -53,7 +53,7 @@ const ContactSection = () => {
         <section ref={sectionRef} className="py-4 lg:py-8 bg-white">
             <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
                 {/* Heading */}
-                <div ref={headingRef} className="text-center max-w-3xl mx-auto mb-0 space-y-2">
+                <div ref={headingRef} className="text-center max-w-3xl mx-auto mb-8 lg:mb-12 space-y-2">
                     <h2 className="text-4xl lg:text-5xl xl:text-6xl font-bold text-gray-900 leading-tight">
                         Get in Touch With Us Today: Vibebes
                     </h2>
@@ -65,14 +65,13 @@ const ContactSection = () => {
                 {/* Content Grid */}
                 <div ref={contentRef} className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-start">
                     {/* Left - Image */}
-                    <div className="relative rounded-3xl overflow-hidden h-full min-h-[400px] max-w-sm lg:max-w-md mx-auto lg:mx-0">
+                    <div className="relative rounded-3xl overflow-hidden min-h-[300px] lg:min-h-[400px] max-w-sm lg:max-w-md mx-auto lg:mx-0 bg-gradient-to-br from-primary/20 to-accent/20">
                         <img
                             src="/contact-person.jpg"
                             alt="Contact Person"
-                            className="w-full h-full object-cover absolute inset-0"
+                            className="w-full h-full object-cover"
                             onError={(e) => {
                                 e.target.style.display = 'none';
-                                e.target.parentElement.classList.add('bg-gray-200');
                             }}
                         />
                     </div>
