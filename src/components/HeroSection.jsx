@@ -85,7 +85,7 @@ const HeroSection = () => {
     }, [isMobile]);
 
     return (
-        <section className="relative min-h-screen bg-gradient-to-br from-gray-50 to-white pt-14 sm:pt-16 lg:pt-20 pb-4 sm:pb-6 lg:pb-8 overflow-hidden">
+        <section className="relative min-h-screen bg-gradient-to-br from-gray-50 to-white pt-24 sm:pt-28 lg:pt-32 pb-4 sm:pb-6 lg:pb-8 overflow-hidden">
             {/* Decorative background elements */}
             <div className="absolute top-20 left-10 w-72 h-72 bg-primary/5 rounded-full blur-3xl"></div>
             <div className="absolute bottom-20 right-10 w-96 h-96 bg-accent/10 rounded-full blur-3xl"></div>

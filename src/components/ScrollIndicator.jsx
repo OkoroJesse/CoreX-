@@ -45,7 +45,7 @@ const ScrollIndicator = ({ className = "" }) => {
             onClick={scrollToNext}
         >
             <div
-                className="relative w-32 h-32 bg-gradient-to-br from-amber-50 to-amber-100 rounded-full flex items-center justify-center shadow-lg hover:shadow-xl transition-shadow duration-300"
+                className="relative w-24 h-24 bg-gradient-to-br from-amber-50 to-amber-100 rounded-full flex items-center justify-center shadow-lg hover:shadow-xl transition-shadow duration-300"
             >
                 {/* Circular Text - Rotates */}
                 <svg
