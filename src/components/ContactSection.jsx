@@ -53,7 +53,7 @@ const ContactSection = () => {
         <section ref={sectionRef} className="py-4 lg:py-8 bg-white">
             <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
                 {/* Heading */}
-                <div ref={headingRef} className="text-center max-w-3xl mx-auto mb-8 space-y-4">
+                <div ref={headingRef} className="text-center max-w-3xl mx-auto mb-0 space-y-2">
                     <h2 className="text-4xl lg:text-5xl xl:text-6xl font-bold text-gray-900 leading-tight">
                         Get in Touch With Us Today: Vibebes
                     </h2>
